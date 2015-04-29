@@ -10,7 +10,7 @@ use Common\Mailer\Message;
 /**
  * This is the forwarder-widget: Recommend a friend
  *
- * @author Lander Vanderstraeten <lander.vanderstraeten@wijs.be>
+ * @author Lander Vanderstraeten <lander_vanderstraeten@hotmail.com>
  */
 class Forwarder extends FrontendBaseWidget
 {
