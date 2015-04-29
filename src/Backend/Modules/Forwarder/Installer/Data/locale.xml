@@ -3,36 +3,41 @@
     <Frontend>
         <Core>
             <item type="label" name="To">
-                <translation language="nl">
-                    <![CDATA[naar]]>
-                </translation>
-                <translation language="en">
-                    <![CDATA[to]]>
-                </translation>
+                <translation language="nl"><![CDATA[naar]]></translation>
+                <translation language="en"><![CDATA[to]]></translation>
             </item>
             <item type="label" name="From">
-                <translation language="nl">
-                    <![CDATA[van]]>
-                </translation>
-                <translation language="en">
-                    <![CDATA[from]]>
-                </translation>
+                <translation language="nl"><![CDATA[van]]></translation>
+                <translation language="en"><![CDATA[from]]></translation>
             </item>
             <item type="message" name="ForwarderSubject">
-                <translation language="en">
-                    <![CDATA[%s recommended you a page!]]>
-                </translation>
-                <translation language="nl">
-                    <![CDATA[%s heeft u een pagina aangeraden!]]>
-                </translation>
+                <translation language="en"><![CDATA[%s recommended you a page!]]></translation>
+                <translation language="nl"><![CDATA[%s heeft u een pagina aangeraden!]]></translation>
+            </item>
+            <item type="label" name="RecommendThisToAFriend">
+                <translation language="en"><![CDATA[recommend this to a friend]]></translation>
+                <translation language="nl"><![CDATA[stuur dit naar een vriend]]></translation>
             </item>
         </Core>
     </Frontend>
     <Backend>
         <Extensions>
             <item type="label" name="Forwarder">
+                <translation language="en"><![CDATA[Forwarder]]></translation>
                 <translation language="nl"><![CDATA[Forwarder]]></translation>
             </item>
         </Extensions>
+        <Locale>
+            <item type="label" name="Forwarder">
+                <translation language="en"><![CDATA[Forwarder]]></translation>
+                <translation language="nl"><![CDATA[Forwarder]]></translation>
+            </item>
+        </Locale>
+        <Pages>
+            <item type="label" name="Forwarder">
+                <translation language="en"><![CDATA[Forwarder]]></translation>
+                <translation language="nl"><![CDATA[Forwarder]]></translation>
+            </item>
+        </Pages>
     </Backend>
 </locale>
