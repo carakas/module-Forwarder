@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locale>
+  <Frontend>
+    <Core>
+      <item type="label" name="To">
+        <translation language="nl"><![CDATA[Naar]]></translation>
+        <translation language="en"><![CDATA[to]]></translation>
+      </item>
+      <item type="label" name="From">
+        <translation language="nl"><![CDATA[van]]></translation>
+        <translation language="en"><![CDATA[from]]></translation>
+      </item>
+      <item type="message" name="ForwarderSubject">
+        <translation language="en"><![CDATA[%s recommended you a page!]]></translation>
+        <translation language="nl"><![CDATA[%s heeft u een pagina aangeraden!]]></translation>
+      </item>
+    </Core>
+  </Frontend>
+</locale>

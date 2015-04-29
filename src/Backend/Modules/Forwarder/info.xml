@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <name>Forwarder</name>
+    <version>1.0.0</version>
+    <requirements>
+        <minimum_version>3.9.1</minimum_version>
+    </requirements>
+    <description>
+        <![CDATA[
+                Test
+		]]>
+    </description>
+    <authors>
+        <author>
+            <name><![CDATA[Lander Vanderstraeten]]></name>
+            <url><![CDATA[http://landerstraeten.be]]></url>
+        </author>
+    </authors>
+</module>
