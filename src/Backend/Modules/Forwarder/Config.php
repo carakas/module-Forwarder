@@ -12,23 +12,23 @@ namespace Backend\Modules\FormBuilder;
 use Backend\Core\Engine\Base\Config as BackendBaseConfig;
 
 /**
- * This is the configuration-object for the form builder module
+ * This is the configuration-object for the form builder module.
  *
  * @author Lander vanderstraeten <lander.vanderstraeten@wijs.be>
  */
 class Config extends BackendBaseConfig
 {
     /**
-     * The default action
+     * The default action.
      *
-     * @var	string
+     * @var string
      */
     protected $defaultAction = 'Index';
 
     /**
-     * The disabled actions
+     * The disabled actions.
      *
-     * @var	array
+     * @var array
      */
     protected $disabledActions = array();
 }

@@ -8,20 +8,19 @@ use Frontend\Core\Engine\Language as FL;
 use Common\Mailer\Message;
 
 /**
- * This is the forwarder-widget: Recommend a friend
+ * This is the forwarder-widget: Recommend a friend.
  *
  * @author Lander Vanderstraeten <lander_vanderstraeten@hotmail.com>
  */
 class Forwarder extends FrontendBaseWidget
 {
-
     /**
      * @var FrontendForm
      */
     protected $frm;
 
     /**
-     * Execute
+     * Execute.
      */
     public function execute()
     {
@@ -33,7 +32,7 @@ class Forwarder extends FrontendBaseWidget
     }
 
     /**
-     * Load form
+     * Load form.
      */
     private function loadForm()
     {
@@ -47,7 +46,7 @@ class Forwarder extends FrontendBaseWidget
     }
 
     /**
-     * Validate form
+     * Validate form.
      */
     private function validateForm()
     {
@@ -72,35 +71,35 @@ class Forwarder extends FrontendBaseWidget
             // valid form
             if ($this->frm->isCorrect()) {
                 // get values
-                $from_name = $txtFromName->getValue();
-                $to_name = $txtToName->getValue();
-                $from_email = $txtFromEmail->getValue();
-                $to_email = $txtToEmail->getValue();
-                $formMessage = $txtFormMessage->getValue() ? : null;
+                $fromName = $txtFromName->getValue();
+                $toName = $txtToName->getValue();
+                $fromEmail = $txtFromEmail->getValue();
+                $toEmail = $txtToEmail->getValue();
+                $formMessage = $txtFormMessage->getValue() ?: null;
 
                 // get url
-                $url = SITE_URL . '/' . $this->URL->getQueryString();
+                $url = SITE_URL.'/'.$this->URL->getQueryString();
 
                 // get page title
                 $pageTitle = $this->header->getPageTitle();
 
                 // create message
                 $message = Message::newInstance(
-                    sprintf(FL::getMessage('ForwarderSubject'), $from_name)
+                    sprintf(FL::getMessage('ForwarderSubject'), $fromName)
                 )
                     ->parseHtml(
-                        FRONTEND_MODULES_PATH . '/Forwarder/Layout/Templates/Mails/Form.tpl',
+                        FRONTEND_MODULES_PATH.'/Forwarder/Layout/Templates/Mails/Form.tpl',
                         array(
-                            'fromName' => $from_name,
+                            'fromName' => $fromName,
                             'pageTitle' => $pageTitle,
                             'message' => $formMessage,
                             'url' => $url,
                         ),
                         true
                     )
-                    ->setTo(array($to_email => $to_name))
-                    ->setFrom(array($from_email => $from_name))
-                    ->setReplyTo(array($from_email => $from_name));
+                    ->setTo(array($toEmail => $toName))
+                    ->setFrom(array($fromEmail => $fromName))
+                    ->setReplyTo(array($fromEmail => $fromName));
                 $this->get('mailer')->send($message);
             } else {
                 // not correct, show errors
@@ -115,7 +114,7 @@ class Forwarder extends FrontendBaseWidget
     }
 
     /**
-     * Parse
+     * Parse.
      */
     private function parse()
     {
